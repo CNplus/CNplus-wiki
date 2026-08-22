@@ -1,3 +1,10 @@
+---
+title: CNplus
+description: CNplus 中文编程语言项目首页
+published: true
+editor: markdown
+---
+
 # CNplus —— 使用中文撸代码
 
 > 一门中文编程语言。玩具起步，架构上留有升级成正式语言的出口。
