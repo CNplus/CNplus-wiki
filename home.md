@@ -86,18 +86,19 @@ CNplus 有**自己的** lexer、parser 和 AST，后端可插拔。首发两个�
 
 ## 快速开始
 
-**1. 装 CNplus 本体**（需要 Python 3.11+）：
+**1. 装 CNplus 本体**（需要 Python 3.11+；如果 `python3 --version` 是 3.9 或更老，把下面的 `python3` 换成 `python3.11`）：
 
 ```bash
 git clone https://github.com/CNplus/CNplus-lang.git
 cd CNplus-lang
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e ".[lsp]"
+python3 -m pip install -e ".[lsp]"
 ```
 
-**2. 装好扩展后，在 VSCode 里写代码**：从 [GitHub Release](https://github.com/CNplus/CNplus-lang/releases) 下载最新的 `.vsix`，在 VSCode 扩展面板里安装（详见[快速开始](快速开始.md)）。
+**2. 装 VSCode 扩展**：从 [GitHub Release](https://github.com/CNplus/CNplus-lang/releases) 下载最新的 `.vsix`，在 VSCode 扩展面板里安装。
 
-看到 `你好，世界！` 就装好了。全程在 [快速开始](快速开始.md)。
+**3. 信任工作区**：打开 `.cnp` 文件后如果左下角显示「受限模式」，点它 → 信任，扩展才会启用（高亮、F5 运行、实时报错）。
+
+看到 `你好，世界！` 就装好了。全程图文在 [快速开始](快速开始.md)。
 
 ---
 
