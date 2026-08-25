@@ -80,4 +80,25 @@ python3 我的程序.py
 
 ---
 
+<details>
+<summary>进阶：对照 Python</summary>
+
+这一章本身就是「用 Python 的库」，所以对照关系很直接：
+
+```python
+import math              # 导入 "math" 作为 数学（Python 直接 import）
+print(math.sqrt(16))     # 数学.sqrt(16)
+```
+
+| CNplus | Python |
+|---|---|
+| `导入 "math" 作为 数学` | `import math`（或 `import math as 数学`） |
+| `数学.sqrt(16)` | `math.sqrt(16)` |
+| 转译执行 `--python` | 本来就是 Python |
+| `cnp 编译` | 生成的 `.py` 就是 Python 源码 |
+
+**本质**：CNplus 的 Python 转译后端就是把 `.cnp` 翻译成 Python 再跑，所以 `导入` 直接落到了 Python 的 `import` 上。`cnp 编译` 生成的自包含 `.py`，你甚至能直接读它，看 CNplus 是怎么翻译你的代码的。
+
+</details>
+
 下一章：[十一、看懂错误](11-看懂错误.md)
